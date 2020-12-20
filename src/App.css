@@ -61,7 +61,7 @@
   border-bottom: 1px solid #696969;
 }
 .navbar h1 {
-  font-size: 17px;
+  font-size: 35px;
 }
 .navbar-links {
   font-size: 6px;
@@ -79,6 +79,9 @@
   display: flex;
   justify-content: center;
   height: 100%;
+}
+.main h1 {
+  margin: 30px;
 }
 /* MAIN */
 
@@ -449,7 +452,10 @@
   transform: scale(1.3);
 }
 
-
+.projects-container p {
+  font-size: 10px;
+  font-weight: 100;
+}
 
 
 /* RESPONSIVE */
