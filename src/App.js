@@ -9,10 +9,9 @@ import profileImg from './images/profile.png';
 import socialNetworkImg from './images/socialnetwork.png';
 import projectsImg from './images/projects.png';
 import Projects from './COMPONENTS/COMP.view.projects';
+import Home from './COMPONENTS/COME.view.home';
 
 const App = () => {
-
-
   
   setTimeout(() => {
     var animationTitle = document.getElementById('animation-title');
@@ -28,7 +27,6 @@ const App = () => {
 
   var isNavMenuOpen = false;
   const showhide = () => {
-    console.log(document.querySelector('.navbar-links') )
     if (!isNavMenuOpen) {
       document.querySelector('.navbar-links').classList.add('open')
       document.querySelector('.hamburgerMenu').textContent = 'X';
@@ -40,14 +38,13 @@ const App = () => {
       isNavMenuOpen = false;
     }
   }
-  
   return (
     <BrowserRouter>
     <div className="App">
       <div className='app-container'>
         <header className='header'>
           <div className='navbar'>
-            <Link to='/home'><div className='link-group'><h1>RS</h1></div></Link>
+            <Link to='/'><div className='link-group'><h1>RS</h1></div></Link>
             <h1 className="hamburgerMenu" onClick={showhide}>☰</h1>
             <div className='navbar-links'>
               <Link to='/profile'><div className='link-group' onClick={showhide}><img src={profileImg} alt='profile'/><h2>Profile</h2></div></Link>
@@ -57,7 +54,7 @@ const App = () => {
           </div>
         </header>
         <div className="main">
-          <Route path='/home' exact={true} />
+          <Route path='/' exact={true} component={Home} />
           <Route path='/profile' component={Profile} />
           <Route path='/socialnetwork' component={SocialNetwork} />
           <Route path='/projects' component={Projects} />

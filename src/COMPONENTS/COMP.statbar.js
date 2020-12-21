@@ -1,7 +1,6 @@
 import React from 'react';
 
 const StatBar = (props) => {
-    console.log(props)
     return (
         <div>
             <div className='stat'>{props.statName}</div>

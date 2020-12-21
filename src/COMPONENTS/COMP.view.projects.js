@@ -8,15 +8,16 @@ const Projects = () => {
         <div>
             <h1>Projects</h1>
             <div className='projects-container'>
-                <a href='https://fotos-robertshields.netlify.com/viewposts' target="_blank" rel="noopener noreferrer">
-                    <div className='social-link'><img src={fotosImg} alt='fotos' /><h5>Fotos</h5></div>
-                </a>
-                <p>An instagram clone.</p>
-                
-                <a href='https://pallet-robertshields.herokuapp.com/' target="_blank" rel="noopener noreferrer">
-                    <div className='social-link'><img src={palletImg} alt='pallet' /><h5>Pallet</h5></div>
-                </a>
-                <p>A form generator for auditing and transferring items between subinventories.</p>
+                <div className='social-link'>
+                    <a href='https://fotos-robertshields.netlify.app/viewallposts' target="_blank" rel="noopener noreferrer">
+                        <img src={fotosImg} alt='fotos' /><h5>Fotos</h5>
+                    </a>
+                </div>
+                <div className='social-link'>
+                    <a href='https://pallet-robertshields.herokuapp.com/' target="_blank" rel="noopener noreferrer">
+                        <img src={palletImg} alt='pallet' /><h5>Pallet</h5>
+                    </a>
+                </div>
             </div>
         </div>
     )
