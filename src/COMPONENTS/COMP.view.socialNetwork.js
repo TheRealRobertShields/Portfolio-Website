@@ -5,7 +5,7 @@ import gmailImg from '../images/gmail.png';
 
 const SocialNetwork = () => {
     return (
-        <div>
+        <div className='socials'>
             <h1>Social Network</h1>
             <div className='socials-container'>
                 <div className='social-link'>                

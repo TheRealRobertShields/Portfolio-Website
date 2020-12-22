@@ -5,9 +5,9 @@ import StatBar from './COMP.statbar';
 const Profile = () => {
     return (
         <>
-        <div className='profile-container'>
+        <div className='profile'>
             <h1>Robert Shields</h1>
-            <div className='profile'>
+            <div className='profile-container'>
                 <img src={profileImg} alt='profile'/>
                 <div className='profile-stats'>
                     <h1>Frontend</h1>
